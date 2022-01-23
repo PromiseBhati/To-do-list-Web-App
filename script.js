@@ -24,7 +24,7 @@ addBtn.onclick = ()=>{
 	listArr.push(userData);//adding user data
     localStorage.setItem("New Todo",JSON.stringify(listArr));//transforming js object into a json string 
     showTasks();//calling function
-	addBtn.classList.remove("active");//unactive add button
+    addBtn.classList.remove("active");//unactive add button
 }
 //function to add task list in ul 
 function showTasks(){
@@ -66,3 +66,4 @@ deleteAllBtn.onclick =()=>{
 	localStorage.setItem("New Todo",JSON.stringify(listArr));//transformin json object into jsn string
 	showTasks();//calling function
 }
+
